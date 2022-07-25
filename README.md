@@ -1,4 +1,5 @@
 To run test:
 
-Download the project
-Run NewEggTest.java
+1. Download the project
+2. Run NewEggTest.java
+
