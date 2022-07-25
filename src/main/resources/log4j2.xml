@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="CONSOLE_PATTERN">%d{HH:mm:ss.SSS} %highlight{%-5level}{WARN=bright yellow, INFO=blue, DEBUG=dark gray, TRACE=white} %highlight{%msg }{WARN=bright yellow, INFO=normal, DEBUG=white, TRACE=white}%style{[%c{2}:%L]}{white}%n</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${CONSOLE_PATTERN}" disableAnsi="false"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root additivity="false" level="info">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
